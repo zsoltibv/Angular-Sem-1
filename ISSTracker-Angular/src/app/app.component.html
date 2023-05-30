@@ -1,0 +1,11 @@
+<div
+  class="container"
+  [ngClass]="{
+    'light-blue': this.visibility == 'daylight',
+    'dark-blue': this.visibility == 'eclipsed'
+  }"
+>
+  <div class="inner-container">
+    <app-tracker-panel (visibility)="setVisibility($event)"></app-tracker-panel>
+  </div>
+</div>
